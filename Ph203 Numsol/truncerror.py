@@ -1,6 +1,6 @@
 import numpy as np 
 import matplotlib.pyplot as plt
-
+import sys
 # ------ TRUNCATION ERROR -------
 
 def gerror(h,x0,v0,t0,N): 
@@ -31,7 +31,8 @@ t_error[4] = np.max(gerror(h0/16, 2, 2, 0, N0))
 
 # Plot 
 h_plt = np.array([h0, h0/2, h0/4, h0/8, h0/16])
+
 plt.plot(h_plt, t_error)
 plt.xlabel('h')
 plt.ylabel('Truncation Error')
-plt.show()
+plt.savefig('Images/truncerror.png')
