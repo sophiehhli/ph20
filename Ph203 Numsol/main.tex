@@ -1,6 +1,6 @@
 \documentclass{article}
 \usepackage[utf8]{inputenc}
-\usepackage{graphicx,amsmath,subcaption}
+\usepackage{graphicx,amsmath,subcaption,verbatim}
 
 \title{Physcis 20.3 Numerical Solutions of Ordinary Differential Equations}
 \author{Sophie Li}
@@ -10,6 +10,12 @@
 
 \maketitle
 
+\section{The Version Control Log}
+\verbatiminput{log.txt}
+\section{The Makefile}
+\verbatiminput{Makefile}
+\section{The Source Code}
+\verbatiminput{main.tex}
 \section{The Motion of a Mass on a Spring}
 Figure \ref{fig:expliciteuler} shows a few cycles of oscillation when the explicit Euler method is implemented. This graph was made with initial condition set to $h=0.004, N=10000, x_0=2, y_0=2, t_0=0$.
 \begin{figure}[h]
@@ -135,7 +141,7 @@ If we plot these expressions much we get a graph like in figure \ref{fig:implici
     \label{fig:impliciteuler}
 \end{figure}
 \subsection{Global Errors}
-If we plot the global errors generated using the implicit functions we get a graph like in fig \ref{fig:globalerrorimp}. This graph shows an evolution of total energy similar to figure \ref{fig:globalerrorexp} for the explicit Euler equation. However, the error does not exponentially increase like in figure \ref{fig:globalerrorexp}, instead it first increases and then tails off in a logarithmic fashion. Again, the graphs are comparable because I used the same parameters as for the explicit method.
+If we plot the global errors generated using the implicit functions wee get a graph like in fig \ref{fig:globalerrorimp}. This graph shows an evolution of total energy similar to figure \ref{fig:globalerrorexp} for the explicit Euler equation. However, the error does not exponentially increase like in figure \ref{fig:globalerrorexp}, instead it first increases and then tails off in a logarithmic fashion. Again, the graphs are comparable because I used the same parameters as for the explicit method.
 \begin{figure}[h]
     \centering
     \includegraphics[width = \textwidth]{Images/globalerrorimp.png}
@@ -184,10 +190,5 @@ When the phase space for the symplectic method is plotted along side the analyti
 \end{figure}
 \subsection{Evolution of total energy}
 Figure \ref{fig:totalenergysym} shows the long term evolution of the total energy of the symplectic Euler method compared to the analytical total energy. The analytic energy holds a constant value as expected because energy is conserved in the physical system. We can see that the energy of the symplectic grows, however when it reaches a certain height it returns to the total energy for the analytic solution. This suggests that the error of the symplectic method is in a sense, self-correcting. Although it does not fully conserve energy, it returns back to a given point. And therefore it never diverges significantly like in the explicit or implicit Euler methods. We can also relate figure \ref{fig:totalenergysym} to \ref{fig:phasesymp}(b). The way the energy error is corrected back is similar to the way that the symplectic trajectory deviated yet returned to the trajectory of the analytic solution. This suggests that the error created by the symplectic method is both positive and negative and thus self-correcting. 
-\begin{figure}[h]
-    \centering
-    \includegraphics[width = \textwidth]{Images/totalenenergysym.png}
-    \caption{Long term evolution of the total energy with time, symplectic Euler method}
-    \label{fig:totalenergysym}
-\end{figure}
+
 \end{document}

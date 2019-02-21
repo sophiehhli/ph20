@@ -1,0 +1,35 @@
+commit d07572c0147efd0bb0822f40193b25178725838c
+Author: Sophie Li <shli@caltech.edu>
+Date:   Thu Feb 21 01:21:40 2019 -0800
+
+    changes before trying to make a log file
+
+commit 49a2b64a1503ba1df8236152eb326d8efed01362
+Author: Sophie Li <shli@caltech.edu>
+Date:   Wed Feb 20 17:21:24 2019 -0800
+
+    started to make makefile
+
+commit d29843c5f04a3e0219dda54493aa35690b25843d
+Author: Sophie Li <shli@caltech.edu>
+Date:   Wed Feb 20 16:32:29 2019 -0800
+
+    changes so that images could be produced through sys.argv
+
+commit 0010a31e51aa81fc76ec828b4370c386bd32c58f
+Author: Sophie Li <shli@caltech.edu>
+Date:   Wed Feb 20 15:25:45 2019 -0800
+
+    putting everything into the repos
+
+commit 1e3011f15451b8afbd8847bebc52562cacbffcd2
+Author: Sophie Li <shli@caltech.edu>
+Date:   Wed Feb 13 14:55:03 2019 -0800
+
+    Add concerns about effects of Mars' moons on Wolfman
+
+commit 98922d113ca1d740d35612ef64f31f85080629ef
+Author: Sophie Li <shli@caltech.edu>
+Date:   Wed Feb 13 14:48:22 2019 -0800
+
+    Start notes on mars as a bas
